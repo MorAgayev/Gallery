@@ -34,9 +34,22 @@
   <aside class="offcanvas-aside">
     <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact -->
-    <section>
+    <form>
       <h4>Contact Me</h4>
-    </section>
+      <div class="mb-3">
+        <label for="formControlEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="formControlEmail" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="formControlSubject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="formControlSubject" placeholder="Type subject here">
+      </div>
+      <div class="mb-3">
+        <label for="formControlTextarea" class="form-label">Message Body</label>
+        <textarea class="form-control" id="formControlTextarea" rows="3"  placeholder="Type message text here"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary google-btn" >Submit</button>
+    </form>
   </aside>
 
   <!-- Navigation -->
