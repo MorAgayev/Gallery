@@ -1,0 +1,134 @@
+body {
+    /* background-color: black; */
+
+    background: rgb(34,0,36);
+    background: linear-gradient(347deg, rgba(34,0,36,1) 0%, rgba(207,3,13,1) 0%, rgba(156,156,156,1) 59%);
+    color: #a51d19;
+    /* text-align: center; */
+}
+
+.main-container {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.header-container{
+   text-align: center;
+   position: relative;
+   animation-name: header;
+   animation-duration: 3s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0%{top: -100px;}
+    100% {top: 10px;}
+}
+
+.collect-reset {
+    display:flex ;
+    justify-content:space-between;
+    align-items:center;
+    width: 250px;
+    position: relative;
+    animation-name: collect;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes collect {
+    0% {left: -50px;}
+    100% {left: 40%;}
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0.5px 0.5px lightgray;
+}
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.board {
+    opacity: 0;
+    animation-name: board;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes board {
+    0%{opacity: 0;}
+    100%{opacity: 100;}
+}
+.cell {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+.cell img {
+    width: 20px;
+    height: auto;
+}
+.floor {
+    background-color: lightgray
+}
+.wall {
+    background-color: brown;
+}
+
+.game-board-container {
+    display: flex;
+    justify-content: center;
+}
+
+.game-over-container {
+    font-size: 25px ;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.buttom-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.restart-btn {
+    padding: 5px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #a51d19;
+    border: none;
+    border-radius: 20%;
+    box-shadow: 1px 1px rgb(243, 214, 214);
+    transition: 0.5s;
+    transition-property: background, border-radius, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+      
+.restart-btn:hover {
+    background-color: #c74743;
+    border-radius: 70%;
+    transform:rotateX()
+}
+      
+.restart-btn:active {
+    background-color: #e66b67;
+    box-shadow: 0 5px rgb(240, 136, 136);
+    transform: translateY(4px);
+      }
+ 
